@@ -1,0 +1,215 @@
+<!--
+	Jeremy Chong, Karson Chan and Manash Mathan
+	2021/01/04
+	Game page
+	This is the HTML page that runs the game code. 
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guess Who - Summative Game</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="code.js"></script>
+	</head>
+	<!-- The background music -->
+	<audio controls autoplay="true" loop="true" id="backgroundAudio" hidden="true"> <!-- The loop attribute replays the audio once it is finished.-->
+			<source src="../sounds/bgm.mp3" type="audio/mp3">
+	</audio>
+	<body>
+		<!-- The start screen for the game. -->
+		<div id="startScreen">
+			<img id="gameTitle" src="../images/guessWho.png">
+			<h3 id="creators">By Jeremy Chong, Karson Chan and Manash Mathan</h3>
+			<input type="text" id="txtName" placeholder="Please Enter Your Name">
+			<h2 id="colourHeading">Which colour would you like to be?</h2>
+			<div id="colourOption">
+				<input type="radio" name="colour" id="radRed" checked="checked"> <span id="redOption">RED</span>
+				<input type="radio" name="colour" id="radBlue"> <span id="blueOption">BLUE</span>
+			</div>
+			<br>
+			<input type="button" id="btnPlay" value="CLICK HERE TO PLAY!">
+			<br>
+		</div>
+		<!-- The main screen for the game, which allows the user to play. -->
+		<div id="guessWhoGame">
+			<!-- The bar that includes the questions and user's character. -->
+			<div id="sideBar">
+				<h2 id="userCharacter">YOUR CHARACTER:</h2>
+				<div id="userCharacterImg"></div>
+				<h2 id="questionsHeading">QUESTIONS:</h2>
+				<div id="questionSlider">
+					<label id="lblUserSelectedQuestion"></label>
+					<div id="prevQuestionBox">
+						<br>
+						<p id="prevArrow">&#8249;</p>
+					</div>
+					<div id="nextQuestionBox">
+						<br>
+						<p id="nextArrow">&#8250;</p>
+					</div>
+				</div>
+				<br>
+				<input type="button" id="btnSubmit" value="SUBMIT QUESTION">
+			</div>
+			<!-- The tip screens for the user. -->
+			<div id="startUp">
+				<label id="lblChooseCharacter"></label>
+			</div>
+			<!-- User's turn. -->
+			<div id="userTurn">
+				<h2 id="userTurnHeading">IT'S YOUR TURN</h2>
+				<h2 id="userTip">USE THE QUESTIONS ON THE SIDE BAR TO DETERMINE THE COMPUTER'S CHARACTER!</h2>
+			</div>
+			<!-- Computer's turn. -->
+			<div id="compTurn">
+				<div id="compTurnContent">
+					<img src="../images/computer.png" width="160" height="160">
+					<h2 id="compTurnHeading">COMPUTER'S TURN...</h2>
+					<label id="lblCompQuestion"></label>
+					<input type="button" id="btnYes" value="YES">
+					<input type="button" id="btnNo" value="NO">
+				</div>
+			</div>
+			<!-- Computer's answer to user's question. -->
+			<div id="compAnswerPopUp">
+				<label id="lblCompAnswer">COMPUTER'S ANSWER:</label>
+			</div>
+			<!-- User's guess. -->
+			<div id="userGuessScreen">
+				<div id="guessContent">
+					<br>
+					<h2 id="guessHeading">YOUR GUESS</h2>
+					<h3 id="guessMsg">THE COMPUTER'S CHARACTER IS...</h3>
+					<br>
+					<label id="lblUserGuess"></label>
+				</div>
+			</div>
+			<!-- Computer's turn. -->
+			<div id="compGuessScreen">
+				<div id="guessContent">
+					<br>
+					<h2 id="guessHeading">COMPUTER'S GUESS</h2>
+					<h3 id="guessMsg">YOUR CHARACTER IS...</h3>
+					<br>
+					<label id="lblCompGuess"></label>
+				</div>
+			</div>
+			<!-- Game board grid with character avatars. -->
+			<table>
+				<tr>
+					<td id="character1">
+						<img src="../images/character1.png" width="160" height="160">
+						<h4>Baldie</h4>
+					</td>
+					<td id="character2">
+						<img src="../images/character2.png" width="160" height="160">
+						<h4>Joe</h4>
+					</td>
+					<td id="character3">
+						<img src="../images/character3.png" width="160" height="160">
+						<h4>Karen</h4>
+					</td>
+					<td id="character4">
+						<img src="../images/character4.png" width="160" height="160">
+						<h4>Beanie</h4>
+					</td>
+					<td id="character5">
+						<img src="../images/character5.png" width="160" height="160">
+						<h4>Mary</h4>
+					</td>
+				</tr>
+				<tr>
+					<td id="character6">
+						<img src="../images/character6.png" width="160" height="160">
+						<h4>Will</h4>
+					</td>
+					<td id="character7">
+						<img src="../images/character7.png" width="160" height="160">
+						<h4>Anita</h4>
+					</td>
+					<td id="character8">
+						<img src="../images/character8.png" width="160" height="160">
+						<h4>Claire</h4>
+					</td>
+					<td id="character9">
+						<img src="../images/character9.png" width="160" height="160">
+						<h4>Eyepatch</h4>
+					</td>
+					<td id="character10">
+						<img src="../images/character10.png" width="160" height="160">
+						<h4>Bob</h4>
+					</td>
+				</tr>
+				<tr>
+					<td id="character11">
+						<img src="../images/character11.png" width="160" height="160">
+						<h4>Santa</h4>
+					</td>
+					<td id="character12">
+						<img src="../images/character12.png" width="160" height="160">
+						<h4>Michael</h4>
+					</td>
+					<td id="character13">
+						<img src="../images/character13.png" width="160" height="160">
+						<h4>Susan</h4>
+					</td>
+					<td id="character14">
+						<img src="../images/character14.png" width="160" height="160">
+						<h4>Emoji</h4>
+					</td>
+					<td id="character15">
+						<img src="../images/character15.png" width="160" height="160">
+						<h4>Bernard</h4>
+					</td>
+				</tr>
+				<tr>
+					<td id="character16">
+						<img src="../images/character16.png" width="160" height="160">
+						<h4>Charlie</h4>
+					</td>
+					<td id="character17">
+						<img src="../images/character17.png" width="160" height="160">
+						<h4>Mia</h4>
+					</td>
+					<td id="character18">
+						<img src="../images/character18.png" width="160" height="160">
+						<h4>Frank</h4>
+					</td>
+					<td id="character19">
+						<img src="../images/character19.png" width="160" height="160">
+						<h4>Louis</h4>
+					</td>
+					<td id="character20">
+						<img src="../images/character20.png" width="160" height="160">
+						<h4>Dreads</h4>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- The screen shown when the player wins. -->
+		<div id="winScreen">
+			<img id="winImg" src="../images/trophy.png" width="350" height="350">
+			<h1 id="winMsg">YOU WIN!</h1>
+			<br>
+			<input type="button" id="btnWinReturn" value="RETURN TO THE MAIN MENU">
+		</div>
+		<!-- The screen shown when the player loses. -->
+		<div id="loseScreen">
+			<img id="loseImg" src="../images/lose.png" width="350" height="275">
+			<h1 id="loseMsg">YOU LOSE!</h1>
+			<br>
+			<input type="button" id="btnLoseReturn" value="RETURN TO THE MAIN MENU">
+		</div>
+		<!-- This screen shows when the user makes an error. -->
+		<div id="errorScreen">
+			<div id="errorContent">
+				<p id="closeButton">+</p>
+				<br>
+				<img id="error" src="../images/error.png" width="70" height="70">
+				<br>
+				<label id="lblError"></label>
+			</div>
+		</div>
+	</body>
+</html>

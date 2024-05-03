@@ -1,0 +1,69 @@
+<!--
+	Manash Mathan, Jeremy Chong and Karson Chan
+	2021/01/15
+	Rough Sketches Page
+	This page shows the user the rough sketches for the final program.
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Summative - Rough Sketches</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="bgimg-4">
+		  	<div class="caption3">
+		  		<span id="heading">ROUGH SKETCHES</span>
+		  	</div>
+		</div>
+		<!--Start of NavBar-->
+		<div class="container">
+			<div class="menu">	
+				<ul id="navBar">
+					<li class="logo"><img src="../images/logo.png">
+					<li><a href="../index.html">Home</a></li>
+					<li class="active"><a href="index.html">Rough Sketches</li>
+					<li><a href="../code.txt">Code</a></li>
+					<li><a href="../help/index.html">Help</a></li>
+					<li><a href="../game/index.html">Final Program</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--End of navBar-->
+		<table>
+			<tr>
+				<td>
+					<h3 class="subtitles">Menu Screen</h3>
+					<img id="roughSketchImg" src="../images/gamemain.png" height="400" width="700">
+					<p id="description">
+						This is the menu screen of the game. This page will include a large title of the game, "Guess Who", a text box to input your name (txtName) and 2 radio buttons (radRed and radBlue) to choose which colour you would like your game board to be. Once all the conditions above are filled, you will be able to click the play button (btnPlay) to start playing the game.
+					</p>
+				</td>
+				<td>
+					<h3 class="subtitles">Game Screen</h3>
+					<img id="roughSketchImg" src="../images/gameselect.png" height="400" width="700">
+					<p id="description">
+						This screen is the game board, where you will be able to select your character by clicking on the character profiles. It will also show you your selected character and the board with all of the characters. Once you have chosen your character, you can select certain questions on the side bar to determine the computer's character. After you have decided which question to ask, you can click "Submit question" (btnSubmit) to select and ask that question to the computer. Depending on the computer's answer, the characters will be automatically eliminated from the game board.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3 class="subtitles">Computer's Turn Screen</h3>
+					<img id="roughSketchImg" src="../images/gameanswer.png" height="400" width="700">
+					<p id="description">
+						This screen will appear once your turn is finished. It will then become the computer's turn to ask a question. This screen will show you the computer question (lblCompQuestion) and you will be given an opportunity to answer the question by clicking either the Yes button (btnYes) or the No button (btnNo).
+					</p>
+				</td>
+				<td>
+					<h3 class="subtitles">End Screen</h3>
+					<img id="roughSketchImg" src="../images/gamewinlose.png" height="400" width="700"> 
+					<p id="description">
+						This screen will display once someone wins the game. This screen will either display; "You Win!" or "You Lose!" depending on who won and who lost. There will also be a button that will allow you to return to the game's menu (btnReturn) where you can play the game again.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

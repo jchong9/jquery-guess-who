@@ -1,0 +1,329 @@
+/*
+	Karson Chan, Jeremy Chong and Manash Mathan
+	2021/01/14
+	Styles page for entire webpage.
+	This page is all of the styles for the website except the game.
+*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+a {
+	color: white;
+}
+
+a:hover{
+	color: #19dafa;
+}
+
+#navBar{
+	position: absolute; 
+	top: 8px; 
+	left: 16px;
+}
+
+.menu ul{
+	display: inline-flex;
+	margin: 40px;
+	margin-left: -40px;
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: black;
+	font-size: 20px;
+}
+
+.menu ul li{
+	list-style: none;
+	margin:0 20px;
+	cursor: pointer;
+}
+
+.logo img{
+	width: 200px;
+	height: 100px;
+	margin-top: -30px;
+	margin-right: 48px;
+}
+
+.active	{
+	color: #19dafa !important;
+	text-decoration: underline;
+	text-decoration-color: #19dafa;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 'Montserrat', sans-serif;
+  color: #777;
+  background-color: #282E34;
+}
+
+#title{
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 70px;
+	letter-spacing: 10px;
+	background-color: #111;
+	margin-bottom: -1%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("images/bgimg-1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("images/bgimg-2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("images/bgimg-3.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("images/bgimg-4.jpg");
+  background-size: cover;
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-image: url("images/bgimg-5.png");
+  background-size: cover;
+  min-height: 400px;
+  margin-top: -28px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 92%;
+  text-align: center;
+  background-color: #111;
+  height: 270px;
+  margin-left: 4%;
+}
+
+.caption span.border {
+	font-family: sans-serif;
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.caption2, .caption3 {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 50%;
+  text-align: center;
+  background-color: #111;
+  height:100px;
+  margin-left: 26%;
+}
+
+.caption3 {
+	margin-top: -10%;
+}
+
+#heading {
+	color: white;
+	font-size: 53px;
+	font-weight: bolder;
+}
+
+.textBox {
+	position:relative;
+}
+
+.twoBorder{
+	background-color:transparent;
+	color: black; 
+	font-size: 55px; 
+	font-weight: bold; 
+}
+
+#threeBorder{
+	background-color:transparent;
+	color: black; 
+	font-size: 55px; 
+	font-weight: bold;
+	text-decoration: underline; 
+}
+
+.text
+{
+	color:#ddd;
+	background-color:#282E34;
+	text-align:center;
+	padding:50px 80px;
+	text-align: justify;
+}
+
+.subtitles {
+	font-size: 40px;
+	text-align: center; 
+	color: white; 
+	font-weight: bolder;
+}
+
+.membersRing {
+	overflow: hidden;
+	border-style: groove;
+	padding: 50px;
+	margin: 50px;
+}
+
+#karson {
+	position: absolute;
+	margin-left: 400px;
+	margin-top: -17.5%;
+	font-size: 40px;
+}
+
+#manash{
+	position: absolute;
+	margin-left: 400px;
+	margin-top: -15.5%;
+	font-size: 40px;
+}
+
+#jeremy{
+	position: absolute;
+	margin-left: 400px;
+	margin-top: -16.5%;
+	font-size: 40px;
+}
+
+#karsonTitle{
+	padding-left: 100px;
+}
+
+#karsonPhoto{
+	padding-left: 40px;
+}
+
+#manashPhoto {
+	width: 400px;
+	height: 400px;
+	padding-left: 120px;
+}
+
+#jeremyPhoto{
+	padding-left: 120px;
+}
+
+#karsonAvatar{
+	margin-left: -35px;
+}
+
+#karsonInfo{
+	text-align: center; 
+	margin-left: -40%;
+}
+
+#manashAvatar{
+	margin-left: -65px;
+}
+
+#manashInfo{
+	text-align: center; 
+	margin-left: -40%;
+}
+
+#jeremyInfo{
+	text-align: center; 
+	margin-left: -10%;
+}
+
+#concerns{
+	font-size: 30px;
+}
+
+#backToTop{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+p {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.imgContainer{
+	padding: 10px;
+	padding-left: 100px;
+    float:left;
+}
+
+.par, .par2, .par3 {
+	border-style: dotted;
+	padding: 12px;
+	margin-left: -80px;
+	height: 200px;
+}
+
+.par {
+	width: 100%;
+	margin-right: 25px;
+}
+
+.par2 {
+	margin-left: -125px;
+	margin-right: 10px;
+}
+
+table {
+	width: 100%;
+	border-spacing: 20px;
+}
+
+td {
+	width: 50%;
+	text-align: center;
+	padding: 5px;
+	vertical-align: top;
+}
+
+#description {
+	color: #ddd;
+	width: 80%;
+	margin-left: 12%;
+	text-align: left;
+	font-size: 23px;
+}
+
+#description2 {
+	color: #ddd;
+	width: 84%;
+	margin-left: 8%;
+	text-align: left;
+	font-size: 23px;
+}

@@ -1,0 +1,101 @@
+<!--
+	Karson Chan, Jeremy Chong, Manash Mathan
+	Tuesday, January 12 2020
+	Website Homepage for course Summative
+	This code is used for the homepage of our group's Summative project 
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ICS2O Summative</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="bgimg-1">
+		  	<div class="caption">
+			  	<h1 id="title">ICS2O Summative Programming Project</h1>
+			  	<br>
+			  	<span class="border">Made by: Karson Chan, Jeremy Chong, And Manash Mathan</span>
+		  	</div>
+		</div>
+		<!--Start of NavBar-->
+		<div class="container">
+			<div class="menu">	
+				<ul id="navBar">
+					<li class="logo"><img src="images/logo.png">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="roughSketches/index.html">Rough Sketches</li>
+					<li><a href="code.txt">Code</a></li>
+					<li><a href="help/index.html">Help</a></li>
+					<li><a href="game/index.html">Final Program</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--End of navBar-->
+		<div class="text">
+		 	<h3 class="subtitles">Game Description</h3>
+			<p>
+		  		For the summative project, we will create a GUI and modified version of the board game, "Guess Who?", using JQuery. "Guess Who?" is a very popular board game where each player is given a board with 24 mystery faces however in this game, it will only include 20. At the beginning of the game, the player will get an opportunity to select a character that the computer will have to guess and vice versa. The objective is to guess the "mystery" person on your opponents card by asking a yes or no question per turn about things that could help you determine their mystery character. For instance, let's say you ask if their mystery person has blonde hair and they respond with no, all the characters will blonde hair will be removed. This in turn, will eliminate faces depending on what you asked and if it was correct or not, making the board smaller and smaller and the game closer and closer to the end. This will go on until one person has guessed correctly, making them the victor, however, you get ONE guess. If the guess is wrong, you lose!
+		  	</p>
+		</div>
+		<div class="bgimg-2">
+		  	<div class="caption2">
+		  	<span id="heading">THE GAME</span>
+		  	</div>
+		</div>
+		<div class="textBox">
+		  	<div class="text">
+		  		<h3 class="subtitles">Resources Required</h3>
+		  		<p>
+		  			Many images are required for the game such as the background, character profiles, and the game title. We will also have to include the JQuery CDN in the script tag since this is a JQuery based game. Sounds such as background music will also be required.
+		  		</p>
+		  		<br>
+		  		<hr>
+		  		<br>
+		  		<h3 class="subtitles">Game Screens</h3>
+		  		<p>
+		  			Our game will include a variety of screens. It will first have a menu screen, which will allow the player to enter their name and include which colour they would want their GUI to be. This screen will also include a play button, which will show the user the game screen with the board of characters. In this game screen, the user will be shown a help message that will briefly tell them to select a character and will be shown the game board. After the user has selected their character by clicking on their icons, they will be shown another help message that tells them to choose a question from the board. Once the user has gone and the characters are removed, a pop up of the computer's turn will appear with options of "Yes" and "No" for their question. Once the user or computer is left with one character, they will make a guess and a pop up will appear on the screen with the user or computer's guess. If the guess is correct, the win screen will show, otherwise, the lose screen will show. Both of these screens will have a button to return to the menu. There will also be multiple error screens that will pop up if the user does something they are not supposed to do such as hitting play while not having their name entered.
+		  		</p>
+		  	</div>
+		</div>
+		<div class="bgimg-3">
+		  	<div class="caption2">
+		  		<span id="heading">DEVELOPMENT STAGE</span>
+		  	</div>
+		</div>
+		<div class="textBox">
+			<div class="text">
+		  		<div class="membersRing">
+		  			<h3 class="subtitles">Developers</h3>
+					<div class="image123">
+					    <div class="imgContainer">
+					        <img src="images/myAvatar.png" id="karsonAvatar" height="350" width="350"/>
+					        <h2 id="karsonInfo"><strong>Karson Chan - Web Developer <br>and Game Supervisor</strong></h2>
+					        <p class="par">-Created the main layout of the website<br>-Game Reviewer and Commentor</p>
+					    </div>
+					    <div class="imgContainer">
+					        <img id="manashAvatar" src="images/manashAvatar.png"/ height="350" width="350"/>
+					        <h2 id="manashInfo"><strong>Manash Mathan - Web Editor <br>and Supervisor</strong></h2>
+					        <p class="par2">-Asssisted in creating website <br>subpages<br>-Sub page and graphics Designer</p>
+					    </div>
+					    <div class="imgContainer">
+					        <img src="images/jeremyAvatar.png"/ height="350" width="350"/>
+					        <h2 id="jeremyInfo"><strong>Jeremy Chong - Lead Game Designer <br> and Developer</strong></h2>
+					        <p class="par3">-Designated work for each <br> group member <br> that satisfied everyone<br>-Lead programmer for the game</p>
+					    </div>
+					</div>
+		  		</div>
+		  		<div class="membersRing">
+		  			<h3 class="subtitles">Main Concerns</h3>
+		  			<ul id="concerns">
+		  				<li>Removing Characters on the board after a player asks a question</li>
+		  				<li>Creating the proper program to determine whether the player or the computer won</li>
+		  				<li>Learning how to use arrays as well as removing elements from it</li>
+		  				<li>Creating Functions</li>
+		  			</ul>
+		 	 	</div>
+		  	</div>
+		</div>
+	</body>
+</html>
