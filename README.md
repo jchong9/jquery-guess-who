@@ -11,6 +11,7 @@ This was my final project for my Computer Science course in 2020. I wanted to ch
 
 ## Installation
 Simply download the "summative - 2020" folder and open index.html
+
 Note: You may have to open every file and image for all assets to be loaded in
 
 ## Acknowledgements
