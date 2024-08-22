@@ -1,8 +1,15 @@
 # JQuery Guess Who
-A simple web game inspired by the popular board game, "Guess Who"
+A simple web-based game inspired by the popular board game, "Guess Who"
+
+## Game Preview
+<img width="959" alt="game-demo" src="https://github.com/user-attachments/assets/c76f0eb7-4ba2-4cf5-a49d-6a7f122f48a7" />
+
+You may also access the game and website [here](https://jquery-guess-who.vercel.app/)
+
+NOTE: It may be necessary to zoom out if the website/game assets are styled weirdly
 
 ## Purpose
-This was my final project for my Computer Science course in 2020. I wanted to challenge myself by creating a game without the use of any game frameworks.
+This was my final project for my Computer Science course in 2020, developed alongside my peers Karson Chan and Manash Mathan. I wanted to challenge myself by creating a game without the use of any game frameworks.
 
 ## Technologies
 - HTML
